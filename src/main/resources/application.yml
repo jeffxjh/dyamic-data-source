@@ -1,0 +1,18 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: dyamic-data-source
+    datasource:
+        mysql:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            name: defaultDataSource
+            password: 123456
+            jdbc-url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+            username: root
+        pgsql:
+            driver-class-name: org.postgresql.Driver
+            jdbc-url: jdbc:postgresql://127.0.0.1:5432/postgres  #测试数据库
+            username: postgres
+            password: password
+
